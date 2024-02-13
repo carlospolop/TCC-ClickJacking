@@ -34,7 +34,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window!.level = .screenSaver
         window!.ignoresMouseEvents = true
         window.makeKeyAndOrderFront(window)
-        window.setFrameOrigin(NSPoint(x: window.frame.origin.x , y: window.frame.origin.y + 50))
+        window.setFrameOrigin(NSPoint(x: window.frame.origin.x , y: window.frame.origin.y + 30))
         //window.backgroundColor = NSColor(red: 0, green: 0, blue: 0, alpha: 0.5)
 
         let imageView = NSImageView(frame:CGRect(origin: NSPoint(x: 110, y: 200), size: CGSize(width: 84, height: 84)))
@@ -57,8 +57,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         description.isEditable = false
         description.font = .systemFont(ofSize: 15)
         description.backgroundColor = .black.withAlphaComponent(0)
-        description.frame = CGRect(origin: NSPoint(x: 42, y: -40), size: CGSize(width: 220, height: 200))
-        description.stringValue = "Click OK to see more detailed information and send a report to Apple."
+        description.frame = CGRect(origin: NSPoint(x: 42, y: -30), size: CGSize(width: 220, height: 200))
+        description.stringValue = "Click OK to see more detailed information about the issue and send a report to Apple."
         window.contentView?.addSubview(description)
 
         let button = NSButton();
@@ -68,7 +68,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         button.layer?.borderWidth = 0
         button.layer?.cornerRadius = 10
         button.font = .systemFont(ofSize: 14)
-        button.frame = CGRect(origin: NSPoint(x: 154, y: 36), size: CGSize(width: 110, height: 30))
+        button.frame = CGRect(origin: NSPoint(x: 154, y: 30), size: CGSize(width: 110, height: 38))
         window.contentView?.addSubview(button)
     }
 
